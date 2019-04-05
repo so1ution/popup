@@ -1,0 +1,154 @@
+body {
+	font-size: 12px;
+	font-family: Roboto, Arial, sans-serif;
+	color: #3f3f3f;
+}
+
+/* HEADER */
+header {
+	width: 284px;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
+.account {
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+}
+
+a {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px;
+	text-decoration: none;
+	color: #3f3f3f !important;
+}
+
+.fa-bell {
+	padding: 6px 5px 6px 6px;
+	margin-left: 10px;
+	}
+
+.show-apps {
+	width: 15px;
+	height: 15px;
+	padding: 5px 5px 5px 5px;
+}
+
+
+/* MAIN */
+
+
+/* top arrow for main */
+.content-wrap:after, .content-wrap:before {
+	bottom: 100%;
+	left: 72%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+
+.content-wrap:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 11px;
+	margin-left: -11px;
+	top: -21px;
+}
+.content-wrap:before {
+	border-color: rgba(223, 223, 223, 0);
+	border-bottom-color: #dfdfdf;
+	border-width: 11px;
+	margin-left: -11px;
+	top: -22px;
+}
+
+/* main content */
+.content-wrap {
+	width: 284px;
+	border: 1px solid #dfdfdf;
+	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.12);
+	position: relative;
+	display: none;
+
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 242px;
+	position: relative;	
+	padding: 20px 20px 5px 20px;
+}
+
+.content input {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #ffffff;
+	padding: 5px;
+	border-radius: 10%;
+}
+	
+
+figure {
+	margin: 0px;
+	padding: 10px 5px 10px 5px;
+	}
+
+figcaption {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.more-button {
+	width: 234px;
+	display: inline-block;
+	padding: 10px 30px 10px 20px;
+	background-color: #ececec;
+	text-align: center;
+}
+
+.even-more-link {
+	text-decoration: underline;
+	width: 100px;
+	height: 1em;
+	text-align: center;
+	margin: 20px auto 0px auto;
+}
+
+/* actions */
+
+#toggle-0:checked + main .content-wrap{
+	display: block;
+}
+
+.content input:hover {
+	border-color: #dfdfdf;
+}
+
+input[type=image]:focus {
+	outline: none;
+	border-color: #0485d26b;
+}
+
+
+#toggle-1:checked + .content-wrap .content > .hidden {
+	display: block;
+}
+
+#toggle-1:checked + .content-wrap .content {
+	overflow: auto;
+	max-height: 444px;	
+}
+#toggle-1:checked + .content-wrap .more-button {
+	display: none;
+}
+ 
